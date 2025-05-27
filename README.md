@@ -12,23 +12,23 @@ This project demonstrates a file transfer application with a C++ server and a Py
 
 ## Project Structure
 secure_file_transfer_cpp_py/
-*├── cpp_server/
-*│   ├── main.cpp
-*│   ├── security_ops.h
-*│   ├── security_ops.cpp
-*│   ├── protocol.h
-*│   └── Makefile
-*├── python_client/
-*│   ├── client.py
-*│   ├── security_ops_py.py
-*│   └── config_client.py
-*├── received_files/       # Created by C++ server
-*└── README.md
+* ├── cpp_server/
+* │   ├── main.cpp
+* │   ├── security_ops.h
+* │   ├── security_ops.cpp
+* │   ├── protocol.h
+* │   └── Makefile
+* ├── python_client/
+* │   ├── client.py
+* │   ├── security_ops_py.py
+* │   └── config_client.py
+* ├── received_files/       # Created by C++ server
+* └── README.md
 
 ## Prerequisites
 
 * **C++ Server**:
-    * A C++ compiler supporting C++17 (for `std::filesystem`).
+    * A C++ compiler supporting C++17 (for `filesystem`).
     * `make` utility.
     * Standard libraries (iostream, string, vector, thread, fstream, sys/socket, etc.).
 * **Python Client**:
@@ -38,15 +38,15 @@ secure_file_transfer_cpp_py/
 ## Setup and Usage
 
 1.  **Compile the C++ Server**:
-    Navigate to the `cpp_server` directory:
+    Navigate to the `cpp_reciever` directory:
     ```bash
-    cd cpp_server
+    cd cpp_reciever
     make
     ```
     This will create an executable named `cpp_server`.
 
 2.  **Run the C++ Server**:
-    From the `cpp_server` directory:
+    From the `cpp_reciever` directory:
     ```bash
     ./cpp_server
     ```
@@ -58,7 +58,7 @@ secure_file_transfer_cpp_py/
 4.  **Run the Python Client**:
     Open another terminal and navigate to the `python_client` directory.
     ```bash
-    cd ../python_client # If you were in cpp_server
+    cd ../python_sender # If you were in cpp_server
     python client.py <path_to_file_to_send> <pin>
     ```
     * `<path_to_file_to_send>`: The full path to the file you want to send.
