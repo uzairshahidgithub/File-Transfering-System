@@ -1,4 +1,4 @@
-# Secure File Transfer (C++ Server & Python Client - Simplified XOR)
+# Secure File Transfer (C++ Server (Receiver) & Python Client (Sender) - Simplified XOR)
 
 This project demonstrates a file transfer application with a C++ server and a Python client. It uses XOR encryption for basic confidentiality and a simple checksum for integrity. The focus is on illustrating C++ and Python interoperability in a client-server model with simplified security mechanisms.
 
@@ -12,18 +12,18 @@ This project demonstrates a file transfer application with a C++ server and a Py
 
 ## Project Structure
 secure_file_transfer_cpp_py/
-├── cpp_server/
-│   ├── main.cpp
-│   ├── security_ops.h
-│   ├── security_ops.cpp
-│   ├── protocol.h
-│   └── Makefile
-├── python_client/
-│   ├── client.py
-│   ├── security_ops_py.py
-│   └── config_client.py
-├── received_files/       # Created by C++ server
-└── README.md
+*├── cpp_server/
+*│   ├── main.cpp
+*│   ├── security_ops.h
+*│   ├── security_ops.cpp
+*│   ├── protocol.h
+*│   └── Makefile
+*├── python_client/
+*│   ├── client.py
+*│   ├── security_ops_py.py
+*│   └── config_client.py
+*├── received_files/       # Created by C++ server
+*└── README.md
 
 ## Prerequisites
 
@@ -33,6 +33,7 @@ secure_file_transfer_cpp_py/
     * Standard libraries (iostream, string, vector, thread, fstream, sys/socket, etc.).
 * **Python Client**:
     * Python 3.6+
+    * Supports Only Linux Terminals
 
 ## Setup and Usage
 
